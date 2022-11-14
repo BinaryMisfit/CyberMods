@@ -17,7 +17,7 @@ env:
 
 jobs:
   build-windows_ui:
-    runs-on: windows-2022
+    runs-on: windows-latest
     name: Windows Build (UI)
     steps:
       - name: Checkout
