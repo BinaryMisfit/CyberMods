@@ -15,7 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github_actions", "github_ac
 	ProjectSection(SolutionItems) = preProject
 		..\.github\workflows\build-windows.yml = ..\.github\workflows\build-windows.yml
 		..\.github\workflows\build_ui.yml = ..\.github\workflows\build_ui.yml
-		..\.github\workflows\codeql-analysis.yml = ..\.github\workflows\codeql-analysis.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{C0DE2E8F-871F-47F3-9708-7B63B8CC88B3}"
