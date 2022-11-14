@@ -31,4 +31,4 @@ jobs:
       - name: Restore Dependencies
         run: dotnet restore src/Cyber.Mods.UI/Cyber.Mods.UI.csproj
       - name: Build MAUI Windows
-        run: dotnet publish src/Cyber.Mods.UI/Cyber.Mods.UI.csproj -c Release -f net6.0-windows --no-restore
+        run: dotnet publish src/Cyber.Mods.UI/Cyber.Mods.UI.csproj -c Release -f net6.0-windows10.0.19041.0 --no-restore
