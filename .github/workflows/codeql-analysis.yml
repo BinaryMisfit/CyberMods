@@ -1,8 +1,8 @@
-name: "CodeQL"
+name: CodeQL
 
 on: 
   workflow_run:
-    workflows: ['Build Windows']
+    workflows: [Build Windows]
     types:
       - completed
 
