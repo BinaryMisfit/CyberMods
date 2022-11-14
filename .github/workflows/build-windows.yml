@@ -2,12 +2,7 @@ name: Build Windows
 
 on: 
   push:
-   branches-ignore:
-    - master
-    - release
-  pull_request:
    branches:
-    - master
     - release
 
 env:

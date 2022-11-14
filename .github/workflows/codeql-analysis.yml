@@ -2,7 +2,7 @@ name: CodeQL
 
 on: 
   workflow_run:
-    workflows: [Build Windows]
+    workflows: [Build UI]
     types:
       - completed
 
