@@ -1,19 +1,16 @@
 name: "CodeQL"
 
 on: 
-  push:
-   branches-ignore:
-    - master
-    - release
-  pull_request:
-   branches:
-    - master
-    - release
+  workflow_run:
+    workflows: ['Build Windows']
+    types:
+      - completed
 
 jobs:
   analyze:
     name: Analyze
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     strategy:
       fail-fast: false
       matrix:
