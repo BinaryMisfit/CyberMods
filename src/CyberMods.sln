@@ -5,16 +5,21 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cyber.Mods.UI", "Cyber.Mods.UI\Cyber.Mods.UI.csproj", "{7022E145-6A63-487C-A81B-E34C5647BF7F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{718B5496-E10A-43FF-91C7-466DFD282B61}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{113B9D64-FEB0-4D39-B01A-0AA0B7EE615E}"
 	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-		.gitignore = .gitignore
+		..\.editorconfig = ..\.editorconfig
+		..\.gitignore = ..\.gitignore
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GitHub", "GitHub", "{45D3E1DB-7BEE-465D-8E7A-103E8F2201E1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github_actions", "github_actions", "{B06F03B7-0009-4CDB-B16B-AE54C95476A1}"
 	ProjectSection(SolutionItems) = preProject
-		build-windows.yml = build-windows.yml
-		.github\workflows\codeql-analysis.yml = .github\workflows\codeql-analysis.yml
+		..\.github\workflows\build-windows.yml = ..\.github\workflows\build-windows.yml
+		..\.github\workflows\codeql-analysis.yml = ..\.github\workflows\codeql-analysis.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{C0DE2E8F-871F-47F3-9708-7B63B8CC88B3}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
 Global
