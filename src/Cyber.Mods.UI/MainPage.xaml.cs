@@ -2,23 +2,18 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
+	private readonly IFolderSelect _folderSelect;
 
-	public MainPage()
+	public MainPage(IFolderSelect folderSelect)
 	{
 		InitializeComponent();
+		_folderSelect = folderSelect;
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+	private async void OnPickFolderClicked(object sender, EventArgs e)
 	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
+		var selectedFolder = await _folderSelect.PickFolder();
+		SelectedGameFolder.Text = selectedFolder;
+		SemanticScreenReader.Announce(SelectedGameFolder.Text);
 	}
 }
-
